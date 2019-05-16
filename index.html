@@ -9,6 +9,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <!-- Material Icons -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 
@@ -25,10 +28,33 @@
             <li><a href="#!">Events</a></li>
             <li><a href="#!">Resources</a></li>
             <li><a href="#!">Services</a></li>
+            <li><a class="waves-effect waves-light btn pink accent-3 modal-trigger" href="#modal1">Login</a></li>
           </ul>
         </div>
       </nav>
     </div>
+    <!-- BEGIN LOGIN MODAL -->
+
+    <div id="modal1" class="modal">
+      <div class="modal-content" style="text-align:center">
+        <div class="social-div" id="facebook">
+          <a class="waves-effect waves-light btn-large social facebook">
+            <i class="fab fa-facebook-f"></i> Sign in with facebook</a>
+        </div>
+        <div class="social-div" id="google">
+          <a class="waves-effect waves-light btn-large social google">
+            <i class="fab fa-google"></i> Sign in with google</a>
+        </div>
+        <div class="social-div" id="github">
+          <a class="waves-effect waves-light btn-large social github">
+            <i class="fab fa-github"></i> Sign in with github</a>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+      </div>
+    </div>
+    <!-- END LOGIN MODAL -->
     <ul id="slide-out" class="sidenav">
       <li>
         <div class="user-view">
@@ -130,27 +156,121 @@
           </div>
         </div>
         <!-- End Dummy Articles -->
-      </div>
+      </div><!-- ./row.container-->
       <div class="row container">
         <div class="col l6 m12 s12">
           <h6 class="category-header">Latest News</h6>
+          <ul class="latest-news">
+            <li class="truncate"><a href="#!">Quod non faceret, si in voluptate summum bonum poneret si in voluptate
+                summum bonum poneret</a></li>
+            <li><a href="#!">Quod non faceret, si in voluptate summum bonum poneret</a></li>
+            <li class="truncate"><a href="#!">Quod non faceret, si in voluptate summum bonum poneret si in voluptate
+                summum bonum poneret</a></li>
+            <li class="truncate"><a href="#!">Quod non faceret, si in voluptate summum bonum poneret si in voluptate
+                summum bonum poneret</a></li>
+            <li><a href="#!">Quod non faceret, si in voluptate summum bonum poneret</a></li>
+            <li><a href="#!">Quod non faceret, si in voluptate summum bonum poneret</a></li>
+            <li><a href="#!">Quod non faceret, si in voluptate summum bonum poneret</a></li>
+            <li><a href="#!">Quod non faceret, si in voluptate summum bonum poneret</a></li>
+            <li><a href="#!">Quod non faceret, si in voluptate summum bonum poneret</a></li>
+            <li><a href="#!">Quod non faceret, si in voluptate summum bonum poneret</a></li>
+            <li><a href="#!">Quod non faceret, si in voluptate summum bonum poneret</a></li>
+            <li><a href="#!">Quod non faceret, si in voluptate summum bonum poneret</a></li>
+          </ul>
         </div>
-        <div class="col l6 m12 s12">
-          <h6 class="category-header">Advertisements</h6>
+        <div class="col l6 m12 s12 text-center">
+          <span class="advert">Advertisement</span>
+          <img src="images/advert.jpg" style="width: 100%; padding: .5rem 1rem"  alt="ad" />         
         </div>
       </div>
     </div>
     <div class="parallax-container">
-      <div class="parallax"><img src="images/parallax2.jpg"></div>
+      <div class="valign-wrapper h100">
+        <div class="subscribe-container">
+          <h5>Stay up to date with the latest news and events</h5>
+          <div class="input-field inline">
+            <input id="email_inline" type="email" class="validate">
+            <label for="email_inline">Email</label>
+          </div>
+          <div class="input-field inline">
+            <a class="waves-effect waves-light btn-flat red white-text">subscribe</a>
+          </div>
+        </div>
+
+        <div class="parallax grey lighten-1">
+          <img src="images/parallax2.jpg">
+        </div>
+      </div>
     </div>
-    <div class="section white" style="min-height: 500px">
+    <div class="section white" style="min-height: 300px; padding-top: 5rem;">
       <div class="row container">
-        <h2 class="header">Parallax</h2>
-        <p class="grey-text text-darken-3 lighten-3">Parallax is an effect where the background content or image in this
-          case, is moved at a different speed than the foreground content while scrolling.</p>
+        <div class="col s12 m4">
+          <div class="card blue-grey darken-1">
+            <div class="card-content white-text">
+              <span class="card-title">Card Title</span>
+              <p>I am a very simple card. I am good at containing small bits of information.
+                I am convenient because I require little markup to use effectively.</p>
+            </div>
+            <div class="card-action">
+              <a href="#">This is a link</a>
+              <a href="#">This is a link</a>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m4">
+          <div class="card blue-grey darken-1">
+            <div class="card-content white-text">
+              <span class="card-title">Card Title</span>
+              <p>I am a very simple card. I am good at containing small bits of information.
+                I am convenient because I require little markup to use effectively.</p>
+            </div>
+            <div class="card-action">
+              <a href="#">This is a link</a>
+              <a href="#">This is a link</a>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m4">
+          <div class="card blue-grey darken-1">
+            <div class="card-content white-text">
+              <span class="card-title">Card Title</span>
+              <p>I am a very simple card. I am good at containing small bits of information.
+                I am convenient because I require little markup to use effectively.</p>
+            </div>
+            <div class="card-action">
+              <a href="#">This is a link</a>
+              <a href="#">This is a link</a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </main>
+  <footer class="page-footer bg-theme">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">Footer Content</h5>
+            <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+          </div>
+          <div class="col l4 offset-l2 s12">
+            <h5 class="white-text">Links</h5>
+            <ul>
+              <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+        © 2014 Copyright Text
+        <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+        </div>
+      </div>
+    </footer>
 
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
